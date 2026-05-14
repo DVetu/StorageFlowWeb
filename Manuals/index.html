@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common/style.css">
+  <title>StorageFlow - User Manual</title>
+</head>
+<body>
+  <header>
+    <h1 class="lang" id="ManualTitle"></h1>
+    <button id="LanguageToggle" class="lang" onclick="LanguageManager.switchLanguage()"></button>
+  </header>
+
+  <div class="layout">
+    <main class="content" style="flex: none; margin: 0 auto;">
+      <img src="img/StorageflowLogo.bmp" alt="StorageFlow" style="display: block; margin: 0 auto 20px;">
+      <h2 id="PageTitle"></h2>
+      <p  id="Intro1"></p>
+      <p  id="Intro2"></p>
+      <p  id="Intro3"></p>
+
+      <div class="toc-grid">
+        <div class="toc-row">
+          <a href="1-essentials.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle1"></h3>
+              <p id="TocDesc1"></p>
+            </div>
+          </a>
+          <img id="TocImg1" class="toc-img" src="img/1-Essentials-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="2-login.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle2"></h3>
+              <p id="TocDesc2"></p>
+            </div>
+          </a>
+          <img id="TocImg2" class="toc-img" src="img/2-login-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="3-dashboard.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle3"></h3>
+              <p id="TocDesc3"></p>
+            </div>
+          </a>
+          <img id="TocImg3" class="toc-img" src="img/3-dashboard-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="4-my-settings.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle4"></h3>
+              <p id="TocDesc4"></p>
+            </div>
+          </a>
+          <img id="TocImg4" class="toc-img" src="img/4-my-settings-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="5-users-management.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle5"></h3>
+              <p id="TocDesc5"></p>
+            </div>
+          </a>
+          <img id="TocImg5" class="toc-img" src="img/5-storage-management-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="6-storage-management.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle6"></h3>
+              <p id="TocDesc6"></p>
+            </div>
+          </a>
+          <img id="TocImg6" class="toc-img" src="img/6-reports-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="7-reports.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle7"></h3>
+              <p id="TocDesc7"></p>
+            </div>
+          </a>
+          <img id="TocImg7" class="toc-img" src="img/7-users-management-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="8-help.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle8"></h3>
+              <p id="TocDesc8"></p>
+            </div>
+          </a>
+          <img id="TocImg8" class="toc-img" src="img/8-Tools-en.jpg" alt="">
+        </div>
+
+        <div class="toc-row">
+          <a href="9-about.html" class="toc-card">
+            <div class="toc-body">
+              <h3 id="TocTitle9"></h3>
+              <p id="TocDesc9"></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="lightbox"><img id="lightbox-img" src="" alt=""></div>
+
+  <script src="common/LibEn.js"></script>
+  <script src="common/LibFr.js"></script>
+  <script src="content/index-en.js"></script>
+  <script src="content/index-fr.js"></script>
+  <script src="common/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox    = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      document.querySelectorAll('.toc-img').forEach(img => {
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add('active');
+        });
+      });
+      lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') lightbox.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

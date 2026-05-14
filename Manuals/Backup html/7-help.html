@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common/style.css">
+  <title>StorageFlow - Help</title>
+</head>
+<body>
+  <header>
+    <h1 class="lang" id="ManualTitle"></h1>
+    <button id="LanguageToggle" class="lang" onclick="LanguageManager.switchLanguage()"></button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="index.html"                class="lang nav-home" id="Nav0"></a>
+      <a href="1-essentials.html"         class="lang" id="Nav1"></a>
+      <a href="2-login.html"              class="lang" id="Nav2"></a>
+      <a href="3-my-settings.html"        class="lang" id="Nav3"></a>
+      <a href="4-users-management.html"   class="lang" id="Nav4"></a>
+      <a href="5-storage-management.html" class="lang" id="Nav5"></a>
+      <a href="6-reports.html"            class="lang" id="Nav6"></a>
+      <a href="7-help.html"               class="lang active"  id="Nav7"></a>
+      <a href="8-about.html"              class="lang" id="Nav8"></a>
+    </nav>
+
+    <main class="content">
+      <h2 id="PageTitle"></h2>
+
+      <h3 id="HeadingQuickRef"></h3>
+      <ul>
+        <li id="QuickRef1"></li>
+        <li id="QuickRef2"></li>
+        <li id="QuickRef3"></li>
+        <li id="QuickRef4"></li>
+      </ul>
+
+      <h3 id="HeadingGlossary"></h3>
+      <div class="field">
+        <div class="field-name" id="LabelGlossaryClient"></div>
+        <p id="GlossaryClient"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelGlossaryUnit"></div>
+        <p id="GlossaryUnit"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelGlossaryStorage"></div>
+        <p id="GlossaryStorage"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelGlossarySeason"></div>
+        <p id="GlossarySeason"></p>
+      </div>
+
+      <h3 id="HeadingSituations"></h3>
+      <div class="field">
+        <div class="field-name" id="LabelSitWontStart"></div>
+        <p id="SitWontStart"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelSitCantLogin"></div>
+        <p id="SitCantLogin"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelSitMissingRec"></div>
+        <p id="SitMissingRec"></p>
+      </div>
+
+      <h3 id="HeadingGetHelp"></h3>
+      <p id="GetHelpIntro"></p>
+      <ul>
+        <li id="GetHelp1"></li>
+        <li id="GetHelp2"></li>
+        <li id="GetHelp3"></li>
+        <li id="GetHelp4"></li>
+      </ul>
+    </main>
+  </div>
+
+  <script src="common/LibEn.js"></script>
+  <script src="common/LibFr.js"></script>
+  <script src="content/7-help-en.js"></script>
+  <script src="content/7-help-fr.js"></script>
+  <script src="common/script.js"></script>
+</body>
+</html>

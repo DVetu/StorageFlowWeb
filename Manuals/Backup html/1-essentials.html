@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common/style.css">
+  <title>StorageFlow - Essentials</title>
+</head>
+<body>
+  <header>
+    <h1 class="lang" id="ManualTitle"></h1>
+    <button id="LanguageToggle" class="lang" onclick="LanguageManager.switchLanguage()"></button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="index.html"                class="lang nav-home" id="Nav0"></a>
+      <a href="1-essentials.html"         class="lang active"  id="Nav1"></a>
+      <a href="2-login.html"              class="lang" id="Nav2"></a>
+      <a href="3-my-settings.html"        class="lang" id="Nav3"></a>
+      <a href="4-users-management.html"   class="lang" id="Nav4"></a>
+      <a href="5-storage-management.html" class="lang" id="Nav5"></a>
+      <a href="6-reports.html"            class="lang" id="Nav6"></a>
+      <a href="7-help.html"               class="lang" id="Nav7"></a>
+      <a href="8-about.html"              class="lang" id="Nav8"></a>
+    </nav>
+
+    <main class="content">
+      <h2 id="PageTitle"></h2>
+
+      <details>
+        <summary><h3 id="HeadingWhatDoes"></h3></summary>
+        <p id="WhatDoesIntro"></p>
+        <ul>
+          <li id="WhatDoes1"></li>
+          <li id="WhatDoes2"></li>
+          <li id="WhatDoes3"></li>
+        </ul>
+        <p id="WhatDoesOutro"></p>
+      </details>
+
+      <details>
+        <summary><h3 id="HeadingWhatNot"></h3></summary>
+        <p id="WhatNotIntro"></p>
+        <ul>
+          <li id="WhatNot1"></li>
+          <li id="WhatNot2"></li>
+          <li id="WhatNot3"></li>
+          <li id="WhatNot4"></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><h3 id="HeadingFirstSession"></h3></summary>
+        <p id="FirstSessionIntro"></p>
+        <ol>
+          <li id="Step1"></li>
+          <li id="Step2"></li>
+          <li id="Step3"></li>
+          <li id="Step4"></li>
+          <li id="Step5"></li>
+          <li id="Step6"></li>
+        </ol>
+        <div class="note" id="ExcelNote"></div>
+      </details>
+    </main>
+  </div>
+
+  <script src="common/LibEn.js"></script>
+  <script src="common/LibFr.js"></script>
+  <script src="content/1-essentials-en.js"></script>
+  <script src="content/1-essentials-fr.js"></script>
+  <script src="common/script.js"></script>
+</body>
+</html>

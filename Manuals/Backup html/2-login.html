@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common/style.css">
+  <title>StorageFlow - Login & Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1 class="lang" id="ManualTitle"></h1>
+    <button id="LanguageToggle" class="lang" onclick="LanguageManager.switchLanguage()"></button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="index.html"                class="lang nav-home" id="Nav0"></a>
+      <a href="1-essentials.html"         class="lang" id="Nav1"></a>
+      <a href="2-login.html"              class="lang active"  id="Nav2"></a>
+      <a href="3-my-settings.html"        class="lang" id="Nav3"></a>
+      <a href="4-users-management.html"   class="lang" id="Nav4"></a>
+      <a href="5-storage-management.html" class="lang" id="Nav5"></a>
+      <a href="6-reports.html"            class="lang" id="Nav6"></a>
+      <a href="7-help.html"               class="lang" id="Nav7"></a>
+      <a href="8-about.html"              class="lang" id="Nav8"></a>
+    </nav>
+
+    <main class="content">
+      <h2 id="PageTitle"></h2>
+
+      <!-- Login Screen -->
+      <details>
+        <summary><h3 id="HeadingLogin"></h3></summary>
+        <p id="LoginIntro"></p>
+
+        <div class="field">
+          <div class="field-name" id="LabelLoginLanguageBtn"></div>
+          <p id="LoginLanguageBtn"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelUserName"></div>
+          <p id="UserName"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelRememberMe"></div>
+          <p id="RememberMe"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelPassword"></div>
+          <p id="Password"></p>
+          <ul>
+            <li id="PasswordReveal"></li>
+            <li id="PasswordHint"></li>
+          </ul>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelExitLogin"></div>
+          <p id="ExitLogin"></p>
+        </div>
+      </details>
+
+      <!-- Main Dashboard  -->
+      <details>
+        <summary><h3 id="HeadingDashboard"></h3></summary>
+        <p id="DashboardIntro"></p>
+
+        <div class="field">
+          <div class="field-name" id="LabelColourMode"></div>
+          <p id="ColourMode"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelDashLanguageBtn"></div>
+          <p id="DashLanguageBtn"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelMySettings"></div>
+          <p id="MySettings"></p>
+        </div>
+
+        <div class="admin-notice" id="AdminNotice"></div>
+
+        <div class="field">
+          <div class="field-name" id="LabelUsersManagement"></div>
+          <p id="UsersManagement"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelStorageManagement"></div>
+          <p id="StorageManagement"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelReports"></div>
+          <p id="Reports"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelHelp"></div>
+          <p id="Help"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelAbout"></div>
+          <p id="About"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelStatusBar"></div>
+          <p id="StatusBar"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelExitDash"></div>
+          <p id="ExitDash"></p>
+        </div>
+      </details>
+    </main>
+  </div>
+
+  <script src="common/LibEn.js"></script>
+  <script src="common/LibFr.js"></script>
+  <script src="content/2-login-en.js"></script>
+  <script src="content/2-login-fr.js"></script>
+  <script src="common/script.js"></script>
+</body>
+</html>

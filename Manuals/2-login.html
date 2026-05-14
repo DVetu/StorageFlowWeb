@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common/style.css">
+  <title>StorageFlow - Login</title>
+</head>
+<body>
+  <header>
+    <h1 class="lang" id="ManualTitle"></h1>
+    <button id="LanguageToggle" class="lang" onclick="LanguageManager.switchLanguage()"></button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="index.html"                class="lang nav-home" id="Nav0"></a>
+      <a href="1-essentials.html"         class="lang"          id="Nav1"></a>
+      <a href="2-login.html"              class="lang active"   id="Nav2"></a>
+      <a href="3-dashboard.html"          class="lang"          id="Nav3"></a>
+      <a href="4-my-settings.html"        class="lang"          id="Nav4"></a>
+      <a href="5-users-management.html"   class="lang"          id="Nav5"></a>
+      <a href="6-storage-management.html" class="lang"          id="Nav6"></a>
+      <a href="7-reports.html"            class="lang"          id="Nav7"></a>
+      <a href="8-help.html"               class="lang"          id="Nav8"></a>
+      <a href="9-about.html"              class="lang"          id="Nav9"></a>
+    </nav>
+
+    <main class="content">
+      <h2 id="PageTitle"></h2>
+      <details>
+        <summary><h3 id="HeadingLogin"></h3></summary>
+        <p id="LoginIntro"></p>
+
+        <div class="field">
+          <div class="field-name" id="LabelLoginLanguageBtn"></div>
+          <p id="LoginLanguageBtn"></p>
+        </div>
+
+        <div class="field">
+          <div class="field-name" id="LabelUserName"></div>
+          <p id="UserName"></p>
+        </div>
+
+        <div class="field">
+          <div class="field-name" id="LabelRememberMe"></div>
+          <p id="RememberMe"></p>
+        </div>
+
+        <div class="field">
+          <div class="field-name" id="LabelPassword"></div>
+          <p id="Password"></p>
+          <ul>
+            <li id="PasswordReveal"></li>
+            <li id="PasswordHint"></li>
+          </ul>
+        </div>
+
+        <div class="field">
+          <div class="field-name" id="LabelExitLogin"></div>
+          <p id="ExitLogin"></p>
+        </div>
+
+      </details>
+    </main>
+  </div>
+
+  <script src="common/LibEn.js"></script>
+  <script src="common/LibFr.js"></script>
+  <script src="content/2-login-en.js"></script>
+  <script src="content/2-login-fr.js"></script>
+  <script src="common/script.js"></script>
+</body>
+</html>

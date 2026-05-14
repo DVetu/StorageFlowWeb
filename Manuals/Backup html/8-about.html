@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common/style.css">
+  <title>StorageFlow - About</title>
+</head>
+<body>
+  <header>
+    <h1 class="lang" id="ManualTitle"></h1>
+    <button id="LanguageToggle" class="lang" onclick="LanguageManager.switchLanguage()"></button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="index.html"                class="lang nav-home" id="Nav0"></a>
+      <a href="1-essentials.html"         class="lang" id="Nav1"></a>
+      <a href="2-login.html"              class="lang" id="Nav2"></a>
+      <a href="3-my-settings.html"        class="lang" id="Nav3"></a>
+      <a href="4-users-management.html"   class="lang" id="Nav4"></a>
+      <a href="5-storage-management.html" class="lang" id="Nav5"></a>
+      <a href="6-reports.html"            class="lang" id="Nav6"></a>
+      <a href="7-help.html"               class="lang" id="Nav7"></a>
+      <a href="8-about.html"              class="lang active"  id="Nav8"></a>
+    </nav>
+
+    <main class="content">
+      <h2 id="PageTitle"></h2>
+
+      <div class="field">
+        <div class="field-name" id="LabelAppName"></div>
+        <p id="AppName"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelVersion"></div>
+        <p id="Version"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelDevelopedFor"></div>
+        <p id="DevelopedFor"></p>
+      </div>
+      <div class="field">
+        <div class="field-name" id="LabelDeveloper"></div>
+        <p id="Developer"></p>
+      </div>
+
+      <h3 id="HeadingHistory"></h3>
+      <ul>
+        <li id="Version6"></li>
+      </ul>
+    </main>
+  </div>
+
+  <script src="common/LibEn.js"></script>
+  <script src="common/LibFr.js"></script>
+  <script src="content/8-about-en.js"></script>
+  <script src="content/8-about-fr.js"></script>
+  <script src="common/script.js"></script>
+</body>
+</html>

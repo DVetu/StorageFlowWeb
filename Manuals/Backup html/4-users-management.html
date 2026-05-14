@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common/style.css">
+  <title>StorageFlow - Users Management</title>
+</head>
+<body>
+  <header>
+    <h1 class="lang" id="ManualTitle"></h1>
+    <button id="LanguageToggle" class="lang" onclick="LanguageManager.switchLanguage()"></button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="index.html"                class="lang nav-home" id="Nav0"></a>
+      <a href="1-essentials.html"         class="lang" id="Nav1"></a>
+      <a href="2-login.html"              class="lang" id="Nav2"></a>
+      <a href="3-my-settings.html"        class="lang" id="Nav3"></a>
+      <a href="4-users-management.html"   class="lang active"  id="Nav4"></a>
+      <a href="5-storage-management.html" class="lang" id="Nav5"></a>
+      <a href="6-reports.html"            class="lang" id="Nav6"></a>
+      <a href="7-help.html"               class="lang" id="Nav7"></a>
+      <a href="8-about.html"              class="lang" id="Nav8"></a>
+    </nav>
+
+    <main class="content">
+      <h2 id="PageTitle"></h2>
+      <div class="admin-notice" id="AdminNotice"></div>
+      <p id="Intro"></p>
+
+      <!-- User information -->
+      <details>
+        <summary><h3 id="HeadingUserInfo"></h3></summary>
+
+        <div class="field">
+          <div class="field-name" id="LabelUserID"></div>
+          <p id="UserID"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelFullName"></div>
+          <p id="FullName"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelLoginName"></div>
+          <p id="LoginName"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelPassword"></div>
+          <p id="Password"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelHint"></div>
+          <p id="Hint"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelLanguage"></div>
+          <p id="Language"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelNote"></div>
+          <p id="Note"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelRole"></div>
+          <p id="Role"></p>
+        </div>
+      </details>
+
+      <!-- Controls -->
+      <details>
+        <summary><h3 id="HeadingControls"></h3></summary>
+
+        <div class="field">
+          <div class="field-name" id="LabelNew"></div>
+          <p id="New"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelLanguageBtn"></div>
+          <p id="LanguageBtn"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelGrid"></div>
+          <p id="Grid"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelDelete"></div>
+          <p id="Delete"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelSave"></div>
+          <p id="Save"></p>
+        </div>
+        <div class="field">
+          <div class="field-name" id="LabelExit"></div>
+          <p id="Exit"></p>
+        </div>
+      </details>
+    </main>
+  </div>
+
+  <script src="common/LibEn.js"></script>
+  <script src="common/LibFr.js"></script>
+  <script src="content/4-users-management-en.js"></script>
+  <script src="content/4-users-management-fr.js"></script>
+  <script src="common/script.js"></script>
+</body>
+</html>
